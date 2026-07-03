@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Статьи блога"
+    folder: "_posts/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Язык написания", name: "lang", widget: "select", options: ["ru", "en", "de"], default: "ru" }
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Описание", name: "description", widget: "text" }
+      - { label: "Содержание", name: "body", widget: "markdown" }
+      - { label: "Изображение (превью)", name: "image", widget: "image", required: false }
+      - { label: "Автор", name: "author", widget: "string", default: "Swiss Center Services AG" }
+      - { label: "Дата публикации", name: "date", widget: "datetime" }
+      - { label: "Опубликовано", name: "published", widget: "boolean", default: false }
