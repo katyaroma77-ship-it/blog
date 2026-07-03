@@ -1,0 +1,12 @@
+{
+  "name": "swiss-center-blog",
+  "version": "1.0.0",
+  "description": "Blog for Swiss Center Services AG",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "node scripts/translate.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.11"
+  }
+}
