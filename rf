@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Блог Swiss Center Services AG — новости, статьи и советы по ведению бизнеса в Швейцарии.">
+  <title>Блог — Swiss Center Services AG</title>
+  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="icon" href="images/logo-clean.png" type="image/png">
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- HEADER & NAV -->
+    <header class="main-nav" id="main-nav">
+      <div class="container">
+        <div class="logo-area">
+          <a href="index.html" class="logo-img-link">
+            <img src="logo.png" alt="Swiss Center Services AG" class="top-bar-logo">
+          </a>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+          <div class="lang-switcher mobile-only" style="margin-bottom: 24px; align-self: flex-start; z-index: 1002;"></div>
+          <a href="index.html" id="nav-home" data-i18n="nav_home">Startseite</a>
+          <a href="legal.html" id="nav-legal" data-i18n="nav_legal">Rechtsberatung</a>
+          <a href="accounting.html" id="nav-accounting" data-i18n="nav_accounting">Buchhaltung</a>
+          <a href="tax.html" id="nav-tax" data-i18n="nav_tax">Steuerfragen</a>
+          <a href="about.html" id="nav-about" data-i18n="nav_about">Über uns</a>
+          <a href="blog.html" class="active">Блог</a>
+          <a href="contact.html" id="nav-contacts" data-i18n="nav_contacts">Kontakt</a>
+          <a href="contact.html" class="nav-cta-link mobile-only" data-i18n="nav_cta">Anfrage</a>
+        </div>
+
+        <div class="top-contacts">
+          <div class="lang-switcher desktop-only"></div>
+          <a href="contact.html" class="nav-cta-link desktop-only" id="nav-cta" data-i18n="nav_cta">Anfrage</a>
+          <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+      <div class="mobile-overlay" id="mobile-overlay"></div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html" data-i18n="bread_home">Startseite</a>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+          </svg>
+          <span>Блог</span>
+        </div>
+        <h1>Блог и статьи</h1>
+        <p>Советы и новости по ведению бизнеса в Швейцарии</p>
+      </div>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section class="section">
+      <div class="container">
+        <div id="blog-posts" class="blog-grid">
+          <!-- Посты загружаются здесь скриптом -->
+        </div>
+        <div id="loading" style="text-align: center; padding: 48px;">
+          <p>Загрузка статей...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="images/logo-footer.png" alt="Swiss Center Services AG" loading="lazy" class="footer-logo-img">
+            <p data-i18n="footer_desc">Rechts- und Buchhaltungsdienste in der Schweiz.</p>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer_services">Dienstleistungen</h4>
+            <ul>
+              <li><a href="legal.html" data-i18n="nav_legal">Rechtsberatung</a></li>
+              <li><a href="accounting.html" data-i18n="nav_accounting">Buchhaltung</a></li>
+              <li><a href="tax.html" data-i18n="nav_tax">Steuerfragen</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer_company">Unternehmen</h4>
+            <ul>
+              <li><a href="about.html" data-i18n="nav_about">Über uns</a></li>
+              <li><a href="contact.html" data-i18n="nav_contacts">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer_contact_title">Kontakt</h4>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+              </svg>info@scosag.ch
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+              </svg>Seeblick 1, CH- 6330 Cham, Switzerland
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span data-i18n="footer_rights">© 2026 Swiss Center Services AG.</span>
+          <div class="footer-bottom-links">
+            <a href="#" data-i18n="footer_privacy">Datenschutz</a>
+            <a href="#" data-i18n="footer_imprint">Impressum</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scroll-top" aria-label="Top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="translations.js"></script>
+  <script src="blog-loader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
